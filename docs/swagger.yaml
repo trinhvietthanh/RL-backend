@@ -1,0 +1,15 @@
+info:
+  contact: {}
+  title: RL-Trading API
+paths:
+  /api/v1/user:
+    post:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+      summary: Create new user
+      tags:
+      - users
+swagger: "2.0"
