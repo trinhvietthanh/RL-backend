@@ -20,5 +20,9 @@ func CreateUser() gin.HandlerFunc {
 }
 
 func UsersList() gin.HandlerFunc {
-
+	return func(context *gin.Context) {
+		context.JSON(http.StatusOK, gin.H{
+			"message": "List user",
+		})
+	}
 }
